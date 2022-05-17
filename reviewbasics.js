@@ -100,3 +100,22 @@ return ( Math.ceil(Math.random() * numFaces ));
 console.log(rollDice(20));
 console.log(rollDice(8));
 console.log(rollDice(6));
+
+//Iteracion#6
+//Crea una función llamada swap() que reciba un array y dos parametros que sean indices del array. La función deberá intercambiar 
+//la posición de los valores de los indices que hayamos enviado como parametro. Retorna el array resultante.
+const arrayNames = ['Mesirve', 'Cristiano Romualdo', 'Fernando Muralla', 'Ronalguiño']
+let aux;
+function swap (array,index1, index2){
+    if(array[index1] && array[index2]){
+        aux = array[index1];
+        array[index1] = array[index2];
+        array[index2] = aux;
+    }
+    return array;
+}
+
+console.log(swap(arrayNames,0,3));
+console.log(swap(arrayNames,5,1));
+console.log(swap(arrayNames,1,2));
+console.log(swap(arrayNames,8,20));
